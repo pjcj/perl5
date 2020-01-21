@@ -125,9 +125,11 @@ XXX Remove this section if not applicable.
 
 =item *
 
-L<XXX> has been upgraded from version A.xx to B.yy.
+L<feature> has been upgraded from version 1.57 to 1.58.
 
-If there was something important to note about this change, include that here.
+A new C<indirect> feature has been added, which is enabled by default
+but allows turning off L<indirect object syntax|perlobj/Indirect
+Object Syntax>.
 
 =back
 
