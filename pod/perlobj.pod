@@ -716,6 +716,11 @@ X<indirect object>
 B<Outside of the file handle case, use of this syntax is discouraged as
 it can confuse the Perl interpreter. See below for more details.>
 
+As of Perl 5.32, this syntax can be disabled by turning off
+L<< the C<indirect> feature|feature/The 'indirect' feature >>:
+
+   no feature 'indirect';
+
 Perl supports another method invocation syntax called "indirect object"
 notation. This syntax is called "indirect" because the method comes
 before the object it is being invoked on.
