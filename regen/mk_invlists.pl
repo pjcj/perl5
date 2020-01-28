@@ -539,7 +539,11 @@ sub output_invmap ($$$$$$$) {
                     # generated file
                     if (   $abbreviated_from
                         || length $short > $max_hdr_len)
-                        {
+                    {
+                        my $uc = $short;
+                        $uc =~ s/[[:^upper:]]//g;
+                        $short = $uc
+                                if length $uc > 1 && length $uc < length $short;
                         $short = substr($short, 0, $max_hdr_len);
                         $abbreviated_from = $enum
                                             unless $abbreviated_from;
